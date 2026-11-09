@@ -1,0 +1,28 @@
+{
+  "name": "khata-vahi",
+  "version": "1.0.0",
+  "description": "ખાતાવહી - દુકાન માટે ડિજિટલ હિસાબ ચોપડો (ગુજરાતી ભાષામાં)",
+  "main": "server/server.js",
+  "scripts": {
+    "postinstall": "npm run --prefix server install && npm run --prefix client install",
+    "build": "npm run --prefix client build",
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "npm run --prefix client dev"
+  },
+  "keywords": [
+    "khata",
+    "khata-book",
+    "khata-vahi",
+    "gujarati",
+    "ledger",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
